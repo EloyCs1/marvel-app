@@ -1,11 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useIntl } from "react-intl";
 
 function App() {
+  const { formatMessage } = useIntl();
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <p>{formatMessage({ id: "title" })}</p>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

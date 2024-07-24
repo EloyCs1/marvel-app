@@ -3,11 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { IntlProvider } from "react-intl";
+import messages, { DEFAULT_LOCALE, getLocales } from "./lang";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+
+const navigatorLanguage = navigator.language.split(/[-_]/)[0];
+const locale = getLocales().includes(navigatorLanguage) ? navigatorLanguage : DEFAULT_LOCALE;
+
 root.render(
   <React.StrictMode>
-    <App />
+    <IntlProvider locale={locale} messages={messages[locale as keyof typeof messages]} defaultLocale={DEFAULT_LOCALE}>
+      <App />
+    </IntlProvider>
   </React.StrictMode>,
 );
 
