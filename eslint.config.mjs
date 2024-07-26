@@ -15,6 +15,7 @@ export default [
       ...pluginReact.configs.flat.recommended.rules,
       "react/react-in-jsx-scope": 0,
       "@typescript-eslint/no-namespace": "off",
+      "react/prop-types": "off",
     },
   },
 ];
