@@ -1,6 +1,8 @@
 .characterCard {
   background: var(--color-black);
   position: relative;
+  text-decoration: none;
+
   &:before {
     content: "";
     position: absolute;
@@ -29,6 +31,7 @@
     p {
       color: var(--color-white);
       text-transform: uppercase;
+      width: fit-content;
     }
   }
 }

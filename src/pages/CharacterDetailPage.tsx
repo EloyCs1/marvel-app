@@ -1,15 +1,21 @@
 import { useParams } from "react-router-dom";
-import useCharacterDetail from "../hooks/useCharacterDetail";
+
+import NotFound from "./NotFound";
 import Layout from "../components/Layout/Layout";
+import CharacterDetail from "../components/CharacterDetail/CharacterDetail";
 
 const CharacterDetailPage = () => {
   const { characterId } = useParams<{ characterId: string }>();
-  const { characterDetail } = useCharacterDetail(characterId ? parseInt(characterId) : 0);
-  console.log("🚀 ~ CharacterDetailPage ~ characterDetail:", characterDetail);
+
+  const validCharacterId = characterId ? parseInt(characterId) : NaN;
+
+  if (isNaN(validCharacterId)) {
+    return <NotFound />;
+  }
 
   return (
     <Layout>
-      <></>
+      <CharacterDetail characterId={validCharacterId} />
     </Layout>
   );
 };

@@ -198,7 +198,7 @@ export declare namespace AppCharacter {
   interface Comic {
     id: number;
     title: string;
-    modified: number;
+    onsaleDate: number;
     image: string;
   }
 

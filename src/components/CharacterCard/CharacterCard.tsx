@@ -1,13 +1,16 @@
-import { CharacterCardProps } from "./types";
-import "./styles.scss";
+import { Link } from "react-router-dom";
+
 import Icon from "../common/Icon/Icon";
 import { IconName } from "../common/Icon/types";
 
+import { CharacterCardProps } from "./types";
+import "./styles.scss";
+
 const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
-  const { name, image, favorite } = character;
+  const { id, name, image, favorite } = character;
 
   return (
-    <div className="characterCard">
+    <Link className="characterCard" to={`/character/${id}`}>
       <div className="characterCard__image">
         <img src={image} alt={name} />
       </div>
@@ -15,7 +18,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
         <p>{name}</p>
         <Icon name={favorite ? IconName.FAVORITES_FILLED : IconName.FAVORITES_OUTLINED} width={12} height={10.84} />
       </div>
-    </div>
+    </Link>
   );
 };
 export default CharacterCard;

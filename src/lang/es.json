@@ -1,5 +1,6 @@
 {
   "title": "Titulo",
   "characterList.searchInput.placeholder": "Buscar un personaje...",
-  "characterList.searchInput.helpText": "{count} resultados"
+  "characterList.searchInput.helpText": "{count} resultados",
+  "characterDetail.comics.title": "Comics"
 }

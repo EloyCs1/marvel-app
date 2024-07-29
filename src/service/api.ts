@@ -5,7 +5,8 @@ const getEndpointUrl = (endpoint: string) => `${BASE_URL_MARVEL}${endpoint}&apik
 
 const getCharactersUrl = (limit: number) => getEndpointUrl(`/characters?limit=${limit}`);
 const getCharacterUrl = (characterId: number) => getEndpointUrl(`/characters/${characterId}?`);
-const getCharacterComicsUrl = (characterId: number) => getEndpointUrl(`/characters/${characterId}/comics?`);
+const getCharacterComicsUrl = (characterId: number, limit: number) =>
+  getEndpointUrl(`/characters/${characterId}/comics?limit=${limit}&orderBy=onsaleDate`);
 
 export const getCharacters = async (limit: number): Promise<ApiCharacters.Character> => {
   const response = await fetch(getCharactersUrl(limit));
@@ -17,7 +18,7 @@ export const getCharacter = async (characterId: number): Promise<ApiCharacters.C
   return await response.json();
 };
 
-export const getCharacterComics = async (characterId: number): Promise<ApiCharacterComics.Comic> => {
-  const response = await fetch(getCharacterComicsUrl(characterId));
+export const getCharacterComics = async (characterId: number, limit: number): Promise<ApiCharacterComics.Comic> => {
+  const response = await fetch(getCharacterComicsUrl(characterId, limit));
   return await response.json();
 };

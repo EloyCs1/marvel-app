@@ -1,0 +1,66 @@
+.characterDetail {
+  &__comics {
+    padding: 48px 48px 0 48px;
+    display: grid;
+    gap: 24px;
+
+    &-title {
+      text-transform: uppercase;
+      margin: auto;
+      width: 960px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &-section {
+      width: 960px;
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      margin: auto;
+
+      &-comic {
+        display: grid;
+        gap: 8px;
+        padding-bottom: 24px;
+
+        img {
+          width: 179px;
+          @media (max-width: 960px) {
+            width: 169px;
+          }
+
+          @media (max-width: 575px) {
+            width: 149px;
+          }
+        }
+
+        &-title {
+          font-weight: 500px;
+          line-height: 19px;
+        }
+
+        &-modified {
+          font-size: 12px;
+          line-height: normal;
+        }
+      }
+    }
+
+    @media (max-width: 1008px) {
+      padding: 48px 0 0 48px;
+      &-title {
+        width: 100%;
+      }
+
+      &-section {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 575px) {
+      padding: 48px 0 0 16px;
+    }
+  }
+}
