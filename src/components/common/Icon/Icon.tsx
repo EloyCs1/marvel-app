@@ -1,5 +1,7 @@
 import React from "react";
+
 import { IconProps, IconName } from "./types";
+import "./styles.scss";
 
 const Icon: React.FC<IconProps> = ({ name, width = 24, height = 21.68 }) => {
   switch (name) {
@@ -28,6 +30,16 @@ const Icon: React.FC<IconProps> = ({ name, width = 24, height = 21.68 }) => {
         <svg width={width} height={height} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M11.9062 10.9922C12.0234 11.1094 12.0234 11.2969 11.9062 11.3906L11.3672 11.9297C11.2734 12.0469 11.0859 12.0469 10.9688 11.9297L8.13281 9.09375C8.08594 9.02344 8.0625 8.95312 8.0625 8.88281V8.57812C7.19531 9.30469 6.09375 9.75 4.875 9.75C2.17969 9.75 0 7.57031 0 4.875C0 2.20312 2.17969 0 4.875 0C7.54688 0 9.75 2.20312 9.75 4.875C9.75 6.09375 9.28125 7.21875 8.55469 8.0625H8.85938C8.92969 8.0625 9 8.10938 9.07031 8.15625L11.9062 10.9922ZM4.875 8.625C6.9375 8.625 8.625 6.96094 8.625 4.875C8.625 2.8125 6.9375 1.125 4.875 1.125C2.78906 1.125 1.125 2.8125 1.125 4.875C1.125 6.96094 2.78906 8.625 4.875 8.625Z"
+            fill="black"
+          />
+        </svg>
+      );
+    case IconName.SPINNER:
+      return (
+        <svg width={width} height={height} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"
+            className="iconSpinner"
             fill="black"
           />
         </svg>

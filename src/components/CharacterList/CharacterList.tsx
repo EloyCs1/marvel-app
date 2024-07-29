@@ -3,6 +3,7 @@ import { useIntl } from "react-intl";
 import useCharacterList from "../../hooks/useCharacterList";
 import SearchInput from "../common/SearchInput/SearchInput";
 import CharacterCard from "../CharacterCard/CharacterCard";
+import Loader from "../common/Loader/Loader";
 
 import { AppCharacter } from "../../service/types";
 import "./styles.scss";
@@ -10,7 +11,7 @@ import "./styles.scss";
 const CharacterList = () => {
   const { formatMessage } = useIntl();
 
-  const { characterList } = useCharacterList();
+  const { loading, characterList } = useCharacterList();
 
   const character: AppCharacter.Character = {
     id: 1011031,
@@ -24,15 +25,20 @@ const CharacterList = () => {
   return (
     <div className="characterList">
       <SearchInput
+        loading={loading}
         placeholder={formatMessage({ id: "characterList.searchInput.placeholder" })}
         helpText={formatMessage({ id: "characterList.searchInput.helpText" }, { count: characterList.length })}
       />
-      <div className="characterList__cardGrid">
-        <CharacterCard character={character} />
-        {characterList.map((character) => (
-          <CharacterCard key={character.id} character={character} />
-        ))}
-      </div>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="characterList__cardGrid">
+          <CharacterCard character={character} />
+          {characterList.map((character) => (
+            <CharacterCard key={character.id} character={character} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

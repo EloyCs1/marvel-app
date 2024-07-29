@@ -1,6 +1,7 @@
 import React from "react";
 
 export interface SearchInputProps {
+  loading?: boolean;
   placeholder?: string;
   helpText?: string;
   value?: string;

@@ -1,4 +1,8 @@
 .navbar {
+  position: fixed;
+  width: -webkit-fill-available;
+  top: 0;
+  z-index: 1;
   height: 84px;
   background-color: #000;
   display: flex;

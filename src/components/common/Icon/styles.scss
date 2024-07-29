@@ -1,0 +1,10 @@
+.iconSpinner {
+  transform-origin: center;
+  animation: iconSpinner_svv 0.75s infinite linear;
+}
+
+@keyframes iconSpinner_svv {
+  100% {
+    transform: rotate(360deg);
+  }
+}
