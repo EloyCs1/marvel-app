@@ -1,29 +1,23 @@
 import { useIntl } from "react-intl";
+import { useFavorites } from "../../context/FavoriteContext";
 
 import useCharacterList from "../../hooks/useCharacterList";
 import SearchInput from "../common/SearchInput/SearchInput";
 import CharacterCard from "../CharacterCard/CharacterCard";
 import Loader from "../common/Loader/Loader";
 
-import { AppCharacter } from "../../service/types";
 import "./styles.scss";
 
 const CharacterList = () => {
   const { formatMessage } = useIntl();
-
   const { loading, characterList } = useCharacterList();
+  const { favoriteFilter } = useFavorites();
 
-  const character: AppCharacter.Character = {
-    id: 1011031,
-    name: "Agent X (Nijo)",
-    description:
-      "Originally a partner of the mind-altering assassin Black Swan, Nijo spied on Deadpool as part of the Swan's plan to exact revenge for Deadpool falsely taking credit for the Swan's assassination of the Four Winds crime family, which included Nijo's brother.",
-    image: "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg",
-    favorite: false,
-  };
-  console.log("🚀 ~ App ~ characterList:", characterList);
   return (
     <div className="characterList">
+      {favoriteFilter && (
+        <p className="characterList__favoritesTitle">{formatMessage({ id: "characterList.favorites.title" })}</p>
+      )}
       <SearchInput
         loading={loading}
         placeholder={formatMessage({ id: "characterList.searchInput.placeholder" })}
@@ -32,12 +26,13 @@ const CharacterList = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="characterList__cardGrid">
-          <CharacterCard character={character} />
-          {characterList.map((character) => (
-            <CharacterCard key={character.id} character={character} />
-          ))}
-        </div>
+        <>
+          <div className="characterList__cardGrid">
+            {characterList.map((character) => (
+              <CharacterCard key={character.id} character={character} />
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

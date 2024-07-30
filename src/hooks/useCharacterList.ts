@@ -29,7 +29,6 @@ const useCharacterList = () => {
           name,
           description,
           image: `${path}.${extension}`,
-          favorite: false,
         }),
       );
       setCharacterList(mapCharacters);

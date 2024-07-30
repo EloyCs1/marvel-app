@@ -6,7 +6,6 @@ export const defaultCharacterDetail: AppCharacter.Character = {
   name: "",
   image: "",
   description: "",
-  favorite: false,
 };
 
 export const defaultCharacterComics: AppCharacter.Comic[] = [];

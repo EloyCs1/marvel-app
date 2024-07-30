@@ -41,7 +41,6 @@ const useCharacterDetail = (characterId: number) => {
         name,
         description,
         image: `${path}.${extension}`,
-        favorite: false,
       };
       setDetail(mapCharacter);
     } catch (error) {

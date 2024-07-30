@@ -12,8 +12,7 @@
     }
 
     &-content {
-      max-width: 640px;
-      padding-right: 48px;
+      width: 592px;
       display: grid;
       align-content: center;
       gap: 24px;
@@ -46,6 +45,9 @@
       img {
         max-width: 278px;
       }
+      &-content {
+        padding-right: 48px;
+      }
     }
 
     @media (max-width: 575px) {
@@ -56,6 +58,7 @@
       }
 
       &-content {
+        width: calc(100% - 32px);
         padding-right: 16px;
         padding-left: 16px;
         padding-bottom: 48px;

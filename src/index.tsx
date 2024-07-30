@@ -5,6 +5,7 @@ import AppRouter from "./pages/AppRouter";
 import reportWebVitals from "./reportWebVitals";
 import { IntlProvider } from "react-intl";
 import messages, { DEFAULT_LOCALE, getLocales } from "./lang";
+import { defaultFavoriteContextValue, FavoriteProvider } from "./context/FavoriteContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
@@ -14,7 +15,9 @@ const locale = getLocales().includes(navigatorLanguage) ? navigatorLanguage : DE
 root.render(
   <React.StrictMode>
     <IntlProvider locale={locale} messages={messages[locale as keyof typeof messages]} defaultLocale={DEFAULT_LOCALE}>
-      <AppRouter />
+      <FavoriteProvider values={defaultFavoriteContextValue}>
+        <AppRouter />
+      </FavoriteProvider>
     </IntlProvider>
   </React.StrictMode>,
 );

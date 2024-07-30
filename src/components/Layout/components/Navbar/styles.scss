@@ -10,6 +10,10 @@
   justify-content: space-between;
   padding: 0 52px 0 48px;
 
+  a {
+    height: 52px;
+  }
+
   &__favorites {
     display: flex;
     gap: 8px;

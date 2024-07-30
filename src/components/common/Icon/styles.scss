@@ -3,6 +3,13 @@
   animation: iconSpinner_svv 0.75s infinite linear;
 }
 
+.buttonIcon {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 @keyframes iconSpinner_svv {
   100% {
     transform: rotate(360deg);

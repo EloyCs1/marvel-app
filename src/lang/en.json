@@ -1,5 +1,5 @@
 {
-  "title": "Title",
+  "characterList.favorites.title": "Favorites",
   "characterList.searchInput.placeholder": "Search a character...",
   "characterList.searchInput.helpText": "{count} results",
   "characterDetail.comics.title": "Comics"

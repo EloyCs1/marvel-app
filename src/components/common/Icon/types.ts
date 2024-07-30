@@ -9,5 +9,5 @@ export interface IconProps {
   name: IconName;
   width?: number;
   height?: number;
-  color?: string;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
