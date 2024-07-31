@@ -17,7 +17,10 @@ const CharacterComics: React.FC<CharacterComicsProps> = ({ comics, loading }) =>
         ) : (
           comics.map(({ id, image, title, onsaleDate }) => (
             <div key={id} className="characterDetail__comics-section-comic">
-              <img src={image} alt={title} />
+              <div
+                className="characterDetail__comics-section-comic-image"
+                style={{ backgroundImage: `url(${image})` }}
+              />
               <p className="characterDetail__comics-section-comic-title">{title}</p>
               <p className="characterDetail__comics-section-comic-modified">{isNaN(onsaleDate) ? "-" : onsaleDate}</p>
             </div>

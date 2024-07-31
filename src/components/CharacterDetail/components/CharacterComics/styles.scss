@@ -25,19 +25,27 @@
         display: grid;
         gap: 8px;
         padding-bottom: 24px;
+        width: 179px;
 
-        img {
-          width: 179px;
-          min-height: 275px;
+        &-image {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 275px;
+          width: inherit;
+        }
 
-          @media (max-width: 960px) {
-            width: 169px;
-            min-height: 260px;
+        @media (max-width: 960px) {
+          width: 169px;
+          &-image {
+            height: 260px;
           }
+        }
 
-          @media (max-width: 575px) {
-            width: 149px;
-            min-height: 229px;
+        @media (max-width: 575px) {
+          width: 149px;
+          &-image {
+            height: 229px;
           }
         }
 
@@ -50,6 +58,10 @@
           font-size: 12px;
           line-height: normal;
         }
+      }
+      .loader {
+        width: 100%;
+        align-content: center;
       }
     }
 

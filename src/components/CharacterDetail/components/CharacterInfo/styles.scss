@@ -7,8 +7,18 @@
     gap: 48px;
     position: relative;
 
-    img {
+    &-image {
       max-width: 320px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 320px;
+      width: -webkit-fill-available;
+
+      .loader {
+        height: inherit;
+        align-content: center;
+        background: rgba(255, 255, 255, 0.1);
+      }
     }
 
     &-content {
@@ -42,8 +52,9 @@
     }
 
     @media (max-width: 960px) {
-      img {
+      &-image {
         max-width: 278px;
+        height: 278px;
       }
       &-content {
         padding-right: 48px;
@@ -51,17 +62,16 @@
     }
 
     @media (max-width: 575px) {
-      display: grid;
+      display: block;
 
-      img {
+      &-image {
         max-width: 100%;
+        height: 398px;
       }
 
       &-content {
         width: calc(100% - 32px);
-        padding-right: 16px;
-        padding-left: 16px;
-        padding-bottom: 48px;
+        padding: 24px 16px 48px 16px;
 
         &-header {
           height: unset;

@@ -11,10 +11,14 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
   const { id, name, image } = character;
   const { toggleFavoriteId, favoriteIds, favoriteFilter } = useFavorites();
   const isFavorite = favoriteIds.includes(id);
+  const isImageNotAvailable = image.includes("image_not_available");
 
   return (favoriteFilter && isFavorite) || !favoriteFilter ? (
     <Link className="characterCard" to={`/character/${id}`}>
-      <div className="characterCard__image" style={{ backgroundImage: `url(${image})` }}></div>
+      <div
+        className="characterCard__image"
+        style={{ backgroundImage: `url(${image})`, ...(!isImageNotAvailable && { backgroundPosition: "center" }) }}
+      />
       <div className="characterCard__propeties">
         <p>{name}</p>
         <Icon
