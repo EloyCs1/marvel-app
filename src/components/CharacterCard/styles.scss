@@ -8,19 +8,17 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    border-bottom: 12.86px solid var(--color-white);
-    border-left: 12.86px solid var(--color-black);
+    border-bottom: 13px solid var(--color-white);
+    border-left: 13px solid var(--color-black);
     width: 0;
   }
 
   &__image {
-    height: 184.59px;
-    border-bottom: 5.38px solid var(--color-red);
+    height: 184px;
+    border-bottom: 5px solid var(--color-red);
     overflow: hidden;
-
-    img {
-      width: 120%;
-    }
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   &__propeties {
     padding: 16px 16px 12px 16px;

@@ -14,9 +14,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
 
   return (favoriteFilter && isFavorite) || !favoriteFilter ? (
     <Link className="characterCard" to={`/character/${id}`}>
-      <div className="characterCard__image">
-        <img src={image} alt={name} />
-      </div>
+      <div className="characterCard__image" style={{ backgroundImage: `url(${image})` }}></div>
       <div className="characterCard__propeties">
         <p>{name}</p>
         <Icon
