@@ -1,4 +1,4 @@
-import useCharacterDetail from "../../hooks/useCharacterDetail";
+import useCharacterDetail from "src/hooks/useCharacterDetail";
 
 import CharacterComics from "./components/CharacterComics/CharacterComics";
 import CharacterInfo from "./components/CharacterInfo/CharacterInfo";

@@ -1,10 +1,10 @@
 import { useIntl } from "react-intl";
-import { useFavorites } from "../../context/FavoriteContext";
+import { useFavorites } from "src/context/FavoriteContext";
 
-import useCharacterList from "../../hooks/useCharacterList";
-import SearchInput from "../common/SearchInput/SearchInput";
+import useCharacterList from "src/hooks/useCharacterList";
 import CharacterCard from "../CharacterCard/CharacterCard";
-import Loader from "../common/Loader/Loader";
+import SearchInput from "src/components/common/SearchInput/SearchInput";
+import Loader from "src/components/common/Loader/Loader";
 
 import "./styles.scss";
 

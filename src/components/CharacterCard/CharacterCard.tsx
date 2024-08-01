@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { useFavorites } from "../../context/FavoriteContext";
+import { useFavorites } from "src/context/FavoriteContext";
 
-import Icon from "../common/Icon/Icon";
-import { IconName } from "../common/Icon/types";
+import Icon from "src/components/common/Icon/Icon";
+import { IconName } from "src/components/common/Icon/types";
 
 import { CharacterCardProps } from "./types";
 import "./styles.scss";

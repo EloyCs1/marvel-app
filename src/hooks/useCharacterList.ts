@@ -20,6 +20,7 @@ const useCharacterList = () => {
     try {
       setLoading(true);
       setError(false);
+      setCharacterList([]);
       const {
         data: { results },
       } = await getCharacters(GET_CHARACTERS_LIMIT, nameStartsWith);

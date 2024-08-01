@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
-import Icon from "../../../common/Icon/Icon";
-import { IconName } from "../../../common/Icon/types";
-import { useFavorites } from "../../../../context/FavoriteContext";
+import Icon from "src/components/common/Icon/Icon";
+import { IconName } from "src/components/common/Icon/types";
+import { useFavorites } from "src/context/FavoriteContext";
 
 import "./styles.scss";
 

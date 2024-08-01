@@ -1,6 +1,6 @@
 import { useIntl } from "react-intl";
 
-import Loader from "../../../common/Loader/Loader";
+import Loader from "src/components/common/Loader/Loader";
 
 import { CharacterComicsProps } from "./types";
 import "./styles.scss";
