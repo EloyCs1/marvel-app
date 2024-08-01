@@ -14,7 +14,7 @@ export const FavoriteProvider = ({ children, values }: FavoriteProviderProps) =>
   const [favoriteFilter, setFavoriteFilter] = useState(values.favoriteFilter);
   const [favoriteIds, setFavoriteIds] = useState(values.favoriteIds);
 
-  const toggleFavoriteFilter = useCallback(() => setFavoriteFilter(!favoriteFilter), [favoriteFilter]);
+  const toggleFavoriteFilter = useCallback((value: boolean) => setFavoriteFilter(value), []);
   const toggleFavoriteId = useCallback(
     (id: number) => {
       const index = favoriteIds.indexOf(id);

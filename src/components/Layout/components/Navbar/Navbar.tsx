@@ -10,8 +10,13 @@ const Navbar = () => {
   const { favoriteIds, toggleFavoriteFilter } = useFavorites();
   return (
     <div className="navbar">
-      <Link to={"/"}>
-        <img width="130" height="52" src={`${process.env.PUBLIC_URL}/marvel-logo.jpg`} alt="logo" />
+      <Link
+        to={"/"}
+        onClick={() => {
+          toggleFavoriteFilter(false);
+        }}
+      >
+        <Icon width={130} height={52} name={IconName.MARVEL_LOGO} />
       </Link>
       <div className="navbar__favorites">
         <Icon
@@ -19,7 +24,7 @@ const Navbar = () => {
           onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();
-            toggleFavoriteFilter();
+            toggleFavoriteFilter(true);
             navigate("/");
           }}
         />

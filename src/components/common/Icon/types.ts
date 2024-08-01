@@ -3,6 +3,7 @@ export enum IconName {
   FAVORITES_OUTLINED,
   SEARCH,
   SPINNER,
+  MARVEL_LOGO,
 }
 
 export interface IconProps {

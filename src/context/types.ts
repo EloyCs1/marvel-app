@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export interface FavoriteContextValue {
   favoriteFilter: boolean;
-  toggleFavoriteFilter: () => void;
+  toggleFavoriteFilter: (favoriteFilter: boolean) => void;
   favoriteIds: number[];
   toggleFavoriteId: (id: number) => void;
 }

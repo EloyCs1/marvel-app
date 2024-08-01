@@ -10,18 +10,28 @@ import "./styles.scss";
 
 const CharacterList = () => {
   const { formatMessage } = useIntl();
-  const { loading, characterList } = useCharacterList();
-  const { favoriteFilter } = useFavorites();
+  const { loading, characterList, searchText, onChangeSearchText } = useCharacterList();
+  const { favoriteFilter, favoriteIds } = useFavorites();
 
+  const count = favoriteFilter
+    ? characterList.filter(({ id }) => favoriteIds.includes(id)).length
+    : characterList.length;
   return (
     <div className="characterList">
       {favoriteFilter && (
         <p className="characterList__favoritesTitle">{formatMessage({ id: "characterList.favorites.title" })}</p>
       )}
       <SearchInput
+        value={searchText}
         loading={loading}
         placeholder={formatMessage({ id: "characterList.searchInput.placeholder" })}
-        helpText={formatMessage({ id: "characterList.searchInput.helpText" }, { count: characterList.length })}
+        helpText={formatMessage(
+          { id: "characterList.searchInput.helpText" },
+          {
+            count,
+          },
+        )}
+        onChange={onChangeSearchText}
       />
       {loading ? (
         <Loader />

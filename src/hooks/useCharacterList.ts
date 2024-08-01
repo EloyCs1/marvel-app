@@ -7,22 +7,22 @@ import { defaultCharacterList } from "./constants";
 const useCharacterList = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [searchText, setSearchText] = useState("");
   const [characterList, setCharacterList] = useState(defaultCharacterList);
   const isMounted = useRef(true);
+  const isSearchMounted = useRef(true);
 
-  useEffect(() => {
-    return () => {
-      isMounted.current = false;
-    };
-  }, []);
+  const onChangeSearchText = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchText(event.target.value);
+  };
 
-  const getCharacterList = async () => {
+  const getCharacterList = async (nameStartsWith: string) => {
     try {
       setLoading(true);
       setError(false);
       const {
         data: { results },
-      } = await getCharacters(GET_CHARACTERS_LIMIT);
+      } = await getCharacters(GET_CHARACTERS_LIMIT, nameStartsWith);
       const mapCharacters: AppCharacter.Character[] = results.map(
         ({ id, name, description, thumbnail: { extension, path } }) => ({
           id,
@@ -42,11 +42,24 @@ const useCharacterList = () => {
 
   useEffect(() => {
     if (isMounted.current) {
-      getCharacterList();
+      getCharacterList("");
+      isMounted.current = false;
+      return;
     }
-  }, []);
 
-  return { loading, error, characterList };
+    if (isSearchMounted.current) {
+      isSearchMounted.current = false;
+      return;
+    }
+
+    const delayDebounceFn = setTimeout(() => {
+      getCharacterList(searchText);
+    }, 1000);
+
+    return () => clearTimeout(delayDebounceFn);
+  }, [searchText]);
+
+  return { loading, error, characterList, searchText, onChangeSearchText };
 };
 
 export default useCharacterList;
