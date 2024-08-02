@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { getCharacter, getCharacterComics } from "src/service/api";
-import { AppCharacter } from "src/service/types";
+import { ApiCharacterComics, ApiCharacters, AppCharacter } from "src/service/types";
 import { defaultCharacterComics, defaultCharacterDetail } from "./constants";
 import { GET_COMICS_LIMIT } from "src/service/constants";
 
@@ -26,15 +26,16 @@ const useCharacterDetail = (characterId: number) => {
       setLoading(true);
       setError(false);
 
+      const response = await getCharacter(characterId);
       const {
-        data: { results: resultsCharacter },
-      } = await getCharacter(characterId);
+        data: { results },
+      }: ApiCharacters.Character = await response.json();
       const {
         id,
         name,
         description,
         thumbnail: { extension, path },
-      } = resultsCharacter[0];
+      } = results[0];
 
       const mapCharacter: AppCharacter.Character = {
         id,
@@ -56,9 +57,10 @@ const useCharacterDetail = (characterId: number) => {
       setLoadingComics(true);
       setErrorComics(false);
 
+      const response = await getCharacterComics(characterId, GET_COMICS_LIMIT);
       const {
         data: { results },
-      } = await getCharacterComics(characterId, GET_COMICS_LIMIT);
+      }: ApiCharacterComics.Comic = await response.json();
 
       const mapComics: AppCharacter.Comic[] = results.map(({ id, title, dates, thumbnail: { extension, path } }) => {
         const onsaleDate = dates.find(({ type }) => type === "onsaleDate")?.date;

@@ -1,0 +1,459 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput Default render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="searchInput"
+      >
+        <div
+          class="searchInput__input"
+        >
+          <svg
+            fill="none"
+            height="12"
+            viewBox="0 0 13 13"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9062 10.9922C12.0234 11.1094 12.0234 11.2969 11.9062 11.3906L11.3672 11.9297C11.2734 12.0469 11.0859 12.0469 10.9688 11.9297L8.13281 9.09375C8.08594 9.02344 8.0625 8.95312 8.0625 8.88281V8.57812C7.19531 9.30469 6.09375 9.75 4.875 9.75C2.17969 9.75 0 7.57031 0 4.875C0 2.20312 2.17969 0 4.875 0C7.54688 0 9.75 2.20312 9.75 4.875C9.75 6.09375 9.28125 7.21875 8.55469 8.0625H8.85938C8.92969 8.0625 9 8.10938 9.07031 8.15625L11.9062 10.9922ZM4.875 8.625C6.9375 8.625 8.625 6.96094 8.625 4.875C8.625 2.8125 6.9375 1.125 4.875 1.125C2.78906 1.125 1.125 2.8125 1.125 4.875C1.125 6.96094 2.78906 8.625 4.875 8.625Z"
+              fill="black"
+            />
+          </svg>
+          <input
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="searchInput"
+    >
+      <div
+        class="searchInput__input"
+      >
+        <svg
+          fill="none"
+          height="12"
+          viewBox="0 0 13 13"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.9062 10.9922C12.0234 11.1094 12.0234 11.2969 11.9062 11.3906L11.3672 11.9297C11.2734 12.0469 11.0859 12.0469 10.9688 11.9297L8.13281 9.09375C8.08594 9.02344 8.0625 8.95312 8.0625 8.88281V8.57812C7.19531 9.30469 6.09375 9.75 4.875 9.75C2.17969 9.75 0 7.57031 0 4.875C0 2.20312 2.17969 0 4.875 0C7.54688 0 9.75 2.20312 9.75 4.875C9.75 6.09375 9.28125 7.21875 8.55469 8.0625H8.85938C8.92969 8.0625 9 8.10938 9.07031 8.15625L11.9062 10.9922ZM4.875 8.625C6.9375 8.625 8.625 6.96094 8.625 4.875C8.625 2.8125 6.9375 1.125 4.875 1.125C2.78906 1.125 1.125 2.8125 1.125 4.875C1.125 6.96094 2.78906 8.625 4.875 8.625Z"
+            fill="black"
+          />
+        </svg>
+        <input
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`SearchInput Loading render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="searchInput"
+      >
+        <div
+          class="searchInput__input"
+        >
+          <svg
+            height="12"
+            viewBox="0 0 24 24"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="iconSpinner"
+              d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"
+              fill="black"
+            />
+          </svg>
+          <input
+            disabled=""
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="searchInput"
+    >
+      <div
+        class="searchInput__input"
+      >
+        <svg
+          height="12"
+          viewBox="0 0 24 24"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="iconSpinner"
+            d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"
+            fill="black"
+          />
+        </svg>
+        <input
+          disabled=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`SearchInput helpText render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="searchInput"
+      >
+        <div
+          class="searchInput__input"
+        >
+          <svg
+            fill="none"
+            height="12"
+            viewBox="0 0 13 13"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9062 10.9922C12.0234 11.1094 12.0234 11.2969 11.9062 11.3906L11.3672 11.9297C11.2734 12.0469 11.0859 12.0469 10.9688 11.9297L8.13281 9.09375C8.08594 9.02344 8.0625 8.95312 8.0625 8.88281V8.57812C7.19531 9.30469 6.09375 9.75 4.875 9.75C2.17969 9.75 0 7.57031 0 4.875C0 2.20312 2.17969 0 4.875 0C7.54688 0 9.75 2.20312 9.75 4.875C9.75 6.09375 9.28125 7.21875 8.55469 8.0625H8.85938C8.92969 8.0625 9 8.10938 9.07031 8.15625L11.9062 10.9922ZM4.875 8.625C6.9375 8.625 8.625 6.96094 8.625 4.875C8.625 2.8125 6.9375 1.125 4.875 1.125C2.78906 1.125 1.125 2.8125 1.125 4.875C1.125 6.96094 2.78906 8.625 4.875 8.625Z"
+              fill="black"
+            />
+          </svg>
+          <input
+            type="text"
+            value=""
+          />
+        </div>
+        <p
+          class="searchInput__helpText"
+        >
+          helpText
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="searchInput"
+    >
+      <div
+        class="searchInput__input"
+      >
+        <svg
+          fill="none"
+          height="12"
+          viewBox="0 0 13 13"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.9062 10.9922C12.0234 11.1094 12.0234 11.2969 11.9062 11.3906L11.3672 11.9297C11.2734 12.0469 11.0859 12.0469 10.9688 11.9297L8.13281 9.09375C8.08594 9.02344 8.0625 8.95312 8.0625 8.88281V8.57812C7.19531 9.30469 6.09375 9.75 4.875 9.75C2.17969 9.75 0 7.57031 0 4.875C0 2.20312 2.17969 0 4.875 0C7.54688 0 9.75 2.20312 9.75 4.875C9.75 6.09375 9.28125 7.21875 8.55469 8.0625H8.85938C8.92969 8.0625 9 8.10938 9.07031 8.15625L11.9062 10.9922ZM4.875 8.625C6.9375 8.625 8.625 6.96094 8.625 4.875C8.625 2.8125 6.9375 1.125 4.875 1.125C2.78906 1.125 1.125 2.8125 1.125 4.875C1.125 6.96094 2.78906 8.625 4.875 8.625Z"
+            fill="black"
+          />
+        </svg>
+        <input
+          type="text"
+          value=""
+        />
+      </div>
+      <p
+        class="searchInput__helpText"
+      >
+        helpText
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`SearchInput value and placeholder render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="searchInput"
+      >
+        <div
+          class="searchInput__input"
+        >
+          <svg
+            fill="none"
+            height="12"
+            viewBox="0 0 13 13"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9062 10.9922C12.0234 11.1094 12.0234 11.2969 11.9062 11.3906L11.3672 11.9297C11.2734 12.0469 11.0859 12.0469 10.9688 11.9297L8.13281 9.09375C8.08594 9.02344 8.0625 8.95312 8.0625 8.88281V8.57812C7.19531 9.30469 6.09375 9.75 4.875 9.75C2.17969 9.75 0 7.57031 0 4.875C0 2.20312 2.17969 0 4.875 0C7.54688 0 9.75 2.20312 9.75 4.875C9.75 6.09375 9.28125 7.21875 8.55469 8.0625H8.85938C8.92969 8.0625 9 8.10938 9.07031 8.15625L11.9062 10.9922ZM4.875 8.625C6.9375 8.625 8.625 6.96094 8.625 4.875C8.625 2.8125 6.9375 1.125 4.875 1.125C2.78906 1.125 1.125 2.8125 1.125 4.875C1.125 6.96094 2.78906 8.625 4.875 8.625Z"
+              fill="black"
+            />
+          </svg>
+          <input
+            placeholder="placeholder"
+            type="text"
+            value="value"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="searchInput"
+    >
+      <div
+        class="searchInput__input"
+      >
+        <svg
+          fill="none"
+          height="12"
+          viewBox="0 0 13 13"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.9062 10.9922C12.0234 11.1094 12.0234 11.2969 11.9062 11.3906L11.3672 11.9297C11.2734 12.0469 11.0859 12.0469 10.9688 11.9297L8.13281 9.09375C8.08594 9.02344 8.0625 8.95312 8.0625 8.88281V8.57812C7.19531 9.30469 6.09375 9.75 4.875 9.75C2.17969 9.75 0 7.57031 0 4.875C0 2.20312 2.17969 0 4.875 0C7.54688 0 9.75 2.20312 9.75 4.875C9.75 6.09375 9.28125 7.21875 8.55469 8.0625H8.85938C8.92969 8.0625 9 8.10938 9.07031 8.15625L11.9062 10.9922ZM4.875 8.625C6.9375 8.625 8.625 6.96094 8.625 4.875C8.625 2.8125 6.9375 1.125 4.875 1.125C2.78906 1.125 1.125 2.8125 1.125 4.875C1.125 6.96094 2.78906 8.625 4.875 8.625Z"
+            fill="black"
+          />
+        </svg>
+        <input
+          placeholder="placeholder"
+          type="text"
+          value="value"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

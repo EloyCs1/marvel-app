@@ -16,7 +16,7 @@ const NotFound = () => {
         <p>
           <strong>{formatMessage({ id: "notFound.betterLuck" })}</strong>
         </p>
-        <Link to={"/"}>Marvel Home</Link>
+        <Link to={"/"}>{formatMessage({ id: "notFound.link.home" })}</Link>
       </div>
     </Layout>
   );

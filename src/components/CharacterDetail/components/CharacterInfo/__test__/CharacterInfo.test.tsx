@@ -1,11 +1,11 @@
 import { render } from "@testing-library/react";
-import { CHARACTER } from "src/mocks/mocks";
-import { AppWrapper } from "src/test/test.utils";
+import { CHARACTERS } from "src/mocks/mocks";
+import { AppWrapper } from "src/__test__/test.utils";
 import { CharacterInfoProps } from "../types";
 import CharacterInfo from "../CharacterInfo";
 
 const defaultProps: CharacterInfoProps = {
-  detail: CHARACTER,
+  detail: CHARACTERS[0],
   loading: false,
 };
 

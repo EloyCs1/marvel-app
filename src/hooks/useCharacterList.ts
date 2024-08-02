@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { GET_CHARACTERS_LIMIT } from "src/service/constants";
 import { getCharacters } from "src/service/api";
-import { AppCharacter } from "src/service/types";
+import { ApiCharacters, AppCharacter } from "src/service/types";
 import { defaultCharacterList } from "./constants";
 
 const useCharacterList = () => {
@@ -21,9 +21,10 @@ const useCharacterList = () => {
       setLoading(true);
       setError(false);
       setCharacterList([]);
+      const response = await getCharacters(GET_CHARACTERS_LIMIT, nameStartsWith);
       const {
         data: { results },
-      } = await getCharacters(GET_CHARACTERS_LIMIT, nameStartsWith);
+      }: ApiCharacters.Character = await response.json();
       const mapCharacters: AppCharacter.Character[] = results.map(
         ({ id, name, description, thumbnail: { extension, path } }) => ({
           id,

@@ -2,6 +2,28 @@
   "name": "marvel-app",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/src/__test__/test.utils.tsx",
+      "!<rootDir>/src/mocks/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "text",
+      "html",
+      "lcov",
+      "clover"
+    ]
+  },
   "dependencies": {
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",

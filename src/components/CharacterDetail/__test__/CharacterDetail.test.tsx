@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react";
-import { CHARACTER, COMICS } from "src/mocks/mocks";
-import { AppWrapper } from "src/test/test.utils";
+import { CHARACTERS, COMICS } from "src/mocks/mocks";
+import { AppWrapper } from "src/__test__/test.utils";
 import { CharacterDetailProps } from "../types";
 import CharacterDetail from "../CharacterDetail";
 
-const mockUseCharacterDetail = { detail: CHARACTER, loading: false, comics: COMICS, loadingComics: false };
+const mockUseCharacterDetail = { detail: CHARACTERS[0], loading: false, comics: COMICS, loadingComics: false };
 
 jest.mock("src/hooks/useCharacterDetail", () => ({
   __esModule: true,
@@ -22,7 +22,7 @@ jest.mock("src/components/CharacterDetail/components/CharacterComics/CharacterCo
 }));
 
 const defaultProps: CharacterDetailProps = {
-  characterId: CHARACTER.id,
+  characterId: CHARACTERS[0].id,
 };
 
 describe("CharacterDetail", () => {

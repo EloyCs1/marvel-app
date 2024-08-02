@@ -16,6 +16,7 @@ const CharacterList = () => {
   const count = favoriteFilter
     ? characterList.filter(({ id }) => favoriteIds.includes(id)).length
     : characterList.length;
+
   return (
     <div className="characterList">
       {favoriteFilter && (

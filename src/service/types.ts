@@ -200,8 +200,4 @@ export declare namespace AppCharacter {
     onsaleDate: number;
     image: string;
   }
-
-  interface CharacterDetail extends Character {
-    comics: Comic[];
-  }
 }
