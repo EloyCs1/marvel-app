@@ -1,4 +1,4 @@
-import { AppCharacter } from "../../../../service/types";
+import { AppCharacter } from "src/service/types";
 
 export interface CharacterInfoProps {
   detail: AppCharacter.Character;

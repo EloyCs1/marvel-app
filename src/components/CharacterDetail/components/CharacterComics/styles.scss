@@ -21,44 +21,6 @@
       margin: auto;
       min-height: 229px;
 
-      &-comic {
-        display: grid;
-        gap: 8px;
-        padding-bottom: 24px;
-        width: 179px;
-
-        &-image {
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          height: 275px;
-          width: inherit;
-        }
-
-        @media (max-width: 960px) {
-          width: 169px;
-          &-image {
-            height: 260px;
-          }
-        }
-
-        @media (max-width: 575px) {
-          width: 149px;
-          &-image {
-            height: 229px;
-          }
-        }
-
-        &-title {
-          font-weight: 500px;
-          line-height: 19px;
-        }
-
-        &-modified {
-          font-size: 12px;
-          line-height: normal;
-        }
-      }
       .loader {
         width: 100%;
         align-content: center;

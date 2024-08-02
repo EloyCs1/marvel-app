@@ -1,7 +1,9 @@
 import { render } from "@testing-library/react";
 import CharacterCard from "../CharacterCard";
-import { CHARACTER } from "../../../mocks/mocks";
-import { AppWrapper } from "../../../test/test.utils";
+import { CHARACTER } from "src/mocks/mocks";
+import { AppWrapper } from "src/test/test.utils";
+import { CharacterCardProps } from "../types";
+import { IMAGE_NOT_AVAILABLE } from "src/service/constants";
 
 // const mockUseFavorites = { toggleFavoriteId: jest.fn(), favoriteIds: [], favoriteFilter: false };
 
@@ -9,11 +11,15 @@ import { AppWrapper } from "../../../test/test.utils";
 //   useFavorites: jest.fn(() => mockUseFavorites),
 // }));
 
+const defaultProps: CharacterCardProps = {
+  character: CHARACTER,
+};
+
 describe("CharacterCard", () => {
   test("Default render", () => {
     const wrapper = render(
       <AppWrapper>
-        <CharacterCard character={CHARACTER} />
+        <CharacterCard {...defaultProps} />
       </AppWrapper>,
     );
     expect(wrapper).toMatchSnapshot();
@@ -22,7 +28,7 @@ describe("CharacterCard", () => {
   test("Image not available render", () => {
     const wrapper = render(
       <AppWrapper>
-        <CharacterCard character={{ ...CHARACTER, image: "image_not_available" }} />
+        <CharacterCard character={{ ...defaultProps.character, image: IMAGE_NOT_AVAILABLE }} />
       </AppWrapper>,
     );
     expect(wrapper).toMatchSnapshot();

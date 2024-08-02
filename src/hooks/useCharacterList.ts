@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { GET_CHARACTERS_LIMIT } from "../service/constants";
-import { getCharacters } from "../service/api";
-import { AppCharacter } from "../service/types";
+import { GET_CHARACTERS_LIMIT } from "src/service/constants";
+import { getCharacters } from "src/service/api";
+import { AppCharacter } from "src/service/types";
 import { defaultCharacterList } from "./constants";
 
 const useCharacterList = () => {

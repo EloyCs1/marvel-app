@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { getCharacter, getCharacterComics } from "../service/api";
-import { AppCharacter } from "../service/types";
+import { getCharacter, getCharacterComics } from "src/service/api";
+import { AppCharacter } from "src/service/types";
 import { defaultCharacterComics, defaultCharacterDetail } from "./constants";
-import { GET_COMICS_LIMIT } from "../service/constants";
+import { GET_COMICS_LIMIT } from "src/service/constants";
 
 const useCharacterDetail = (characterId: number) => {
   const [loading, setLoading] = useState(true);

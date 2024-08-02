@@ -1,0 +1,37 @@
+.characterComic {
+  display: grid;
+  gap: 8px;
+  padding-bottom: 24px;
+  width: 179px;
+
+  &__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 275px;
+    width: inherit;
+  }
+
+  @media (max-width: 960px) {
+    width: 169px;
+    &__image {
+      height: 260px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    width: 149px;
+    &__image {
+      height: 229px;
+    }
+  }
+
+  &__title {
+    font-weight: 500px;
+    line-height: 19px;
+  }
+
+  &__onsaleDate {
+    font-size: 12px;
+    line-height: normal;
+  }
+}
