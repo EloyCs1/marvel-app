@@ -9,6 +9,7 @@ import Loader from "src/components/common/Loader/Loader";
 import "./styles.scss";
 
 const CharacterList = () => {
+  const testId = "characterList";
   const { formatMessage } = useIntl();
   const { loading, characterList, searchText, onChangeSearchText } = useCharacterList();
   const { favoriteFilter, favoriteIds } = useFavorites();
@@ -20,9 +21,12 @@ const CharacterList = () => {
   return (
     <div className="characterList">
       {favoriteFilter && (
-        <p className="characterList__favoritesTitle">{formatMessage({ id: "characterList.favorites.title" })}</p>
+        <p className="characterList__favoritesTitle" data-testid={`${testId}-favoritesTitle`}>
+          {formatMessage({ id: "characterList.favorites.title" })}
+        </p>
       )}
       <SearchInput
+        testId={`${testId}-searchInput`}
         value={searchText}
         loading={loading}
         placeholder={formatMessage({ id: "characterList.searchInput.placeholder" })}
@@ -35,10 +39,10 @@ const CharacterList = () => {
         onChange={onChangeSearchText}
       />
       {loading ? (
-        <Loader />
+        <Loader testId={`${testId}-loader`} />
       ) : (
         <>
-          <div className="characterList__cardGrid">
+          <div className="characterList__cardGrid" data-testid={`${testId}-cardGrid`}>
             {characterList.map((character) => (
               <CharacterCard key={character.id} character={character} />
             ))}

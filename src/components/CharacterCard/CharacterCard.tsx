@@ -21,14 +21,16 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
   };
 
   return (favoriteFilter && isFavorite) || !favoriteFilter ? (
-    <Link className="characterCard" to={`/character/${id}`}>
+    <Link className="characterCard" to={`/character/${id}`} data-testid={`characterCard-${id}`}>
       <div
+        data-testid={`characterCard-image-${id}`}
         className="characterCard__image"
         style={{ backgroundImage: `url(${image})`, ...(!isImageNotAvailable && { backgroundPosition: "center" }) }}
       />
-      <div className="characterCard__propeties">
+      <div data-testid={`characterCard-propeties-${id}`} className="characterCard__propeties">
         <p>{name}</p>
         <Icon
+          testId={`characterCard-icon-${id}`}
           name={isFavorite ? IconName.FAVORITES_FILLED : IconName.FAVORITES_OUTLINED}
           width={12}
           height={11}

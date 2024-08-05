@@ -7,22 +7,27 @@ Object {
     <div>
       <a
         class="characterCard"
+        data-testid="characterCard-1017100"
         href="/character/1017100"
       >
         <div
           class="characterCard__image"
+          data-testid="characterCard-image-1017100"
           style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
         />
         <div
           class="characterCard__propeties"
+          data-testid="characterCard-propeties-1017100"
         >
           <p>
             A-Bomb (HAS)
           </p>
           <button
             class="buttonIcon"
+            data-testid="characterCard-icon-1017100-button"
           >
             <svg
+              data-testid="characterCard-icon-1017100"
               fill="none"
               height="11"
               viewBox="0 0 15 14"
@@ -42,22 +47,27 @@ Object {
   "container": <div>
     <a
       class="characterCard"
+      data-testid="characterCard-1017100"
       href="/character/1017100"
     >
       <div
         class="characterCard__image"
+        data-testid="characterCard-image-1017100"
         style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
       />
       <div
         class="characterCard__propeties"
+        data-testid="characterCard-propeties-1017100"
       >
         <p>
           A-Bomb (HAS)
         </p>
         <button
           class="buttonIcon"
+          data-testid="characterCard-icon-1017100-button"
         >
           <svg
+            data-testid="characterCard-icon-1017100"
             fill="none"
             height="11"
             viewBox="0 0 15 14"
@@ -127,6 +137,208 @@ Object {
 }
 `;
 
+exports[`CharacterCard Empty render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div />
+  </body>,
+  "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`CharacterCard Favorite card render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <a
+        class="characterCard"
+        data-testid="characterCard-1017100"
+        href="/character/1017100"
+      >
+        <div
+          class="characterCard__image"
+          data-testid="characterCard-image-1017100"
+          style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
+        />
+        <div
+          class="characterCard__propeties"
+          data-testid="characterCard-propeties-1017100"
+        >
+          <p>
+            A-Bomb (HAS)
+          </p>
+          <button
+            class="buttonIcon"
+            data-testid="characterCard-icon-1017100-button"
+          >
+            <svg
+              data-testid="characterCard-icon-1017100"
+              fill="none"
+              height="11"
+              viewBox="0 0 24 22"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M12 3.80348L6 0.161865L0 3.80348V11.607L12 21.8382L24 11.607V3.80348L18 0.161865L12 3.80348Z"
+                fill="#EC1D24"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </a>
+    </div>
+  </body>,
+  "container": <div>
+    <a
+      class="characterCard"
+      data-testid="characterCard-1017100"
+      href="/character/1017100"
+    >
+      <div
+        class="characterCard__image"
+        data-testid="characterCard-image-1017100"
+        style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
+      />
+      <div
+        class="characterCard__propeties"
+        data-testid="characterCard-propeties-1017100"
+      >
+        <p>
+          A-Bomb (HAS)
+        </p>
+        <button
+          class="buttonIcon"
+          data-testid="characterCard-icon-1017100-button"
+        >
+          <svg
+            data-testid="characterCard-icon-1017100"
+            fill="none"
+            height="11"
+            viewBox="0 0 24 22"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M12 3.80348L6 0.161865L0 3.80348V11.607L12 21.8382L24 11.607V3.80348L18 0.161865L12 3.80348Z"
+              fill="#EC1D24"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </a>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`CharacterCard Image not available render 1`] = `
 Object {
   "asFragment": [Function],
@@ -134,22 +346,27 @@ Object {
     <div>
       <a
         class="characterCard"
+        data-testid="characterCard-1017100"
         href="/character/1017100"
       >
         <div
           class="characterCard__image"
+          data-testid="characterCard-image-1017100"
           style="background-image: url(image_not_available);"
         />
         <div
           class="characterCard__propeties"
+          data-testid="characterCard-propeties-1017100"
         >
           <p>
             A-Bomb (HAS)
           </p>
           <button
             class="buttonIcon"
+            data-testid="characterCard-icon-1017100-button"
           >
             <svg
+              data-testid="characterCard-icon-1017100"
               fill="none"
               height="11"
               viewBox="0 0 15 14"
@@ -169,22 +386,27 @@ Object {
   "container": <div>
     <a
       class="characterCard"
+      data-testid="characterCard-1017100"
       href="/character/1017100"
     >
       <div
         class="characterCard__image"
+        data-testid="characterCard-image-1017100"
         style="background-image: url(image_not_available);"
       />
       <div
         class="characterCard__propeties"
+        data-testid="characterCard-propeties-1017100"
       >
         <p>
           A-Bomb (HAS)
         </p>
         <button
           class="buttonIcon"
+          data-testid="characterCard-icon-1017100-button"
         >
           <svg
+            data-testid="characterCard-icon-1017100"
             fill="none"
             height="11"
             viewBox="0 0 15 14"

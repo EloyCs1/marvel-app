@@ -7,11 +7,13 @@ Object {
     <div>
       <div
         class="searchInput"
+        data-testid="searchInput"
       >
         <div
           class="searchInput__input"
         >
           <svg
+            data-testid="searchInput-icon"
             fill="none"
             height="12"
             viewBox="0 0 13 13"
@@ -24,6 +26,7 @@ Object {
             />
           </svg>
           <input
+            data-testid="searchInput-input"
             type="text"
             value=""
           />
@@ -34,11 +37,13 @@ Object {
   "container": <div>
     <div
       class="searchInput"
+      data-testid="searchInput"
     >
       <div
         class="searchInput__input"
       >
         <svg
+          data-testid="searchInput-icon"
           fill="none"
           height="12"
           viewBox="0 0 13 13"
@@ -51,6 +56,7 @@ Object {
           />
         </svg>
         <input
+          data-testid="searchInput-input"
           type="text"
           value=""
         />
@@ -118,11 +124,13 @@ Object {
     <div>
       <div
         class="searchInput"
+        data-testid="searchInput"
       >
         <div
           class="searchInput__input"
         >
           <svg
+            data-testid="searchInput-icon"
             height="12"
             viewBox="0 0 24 24"
             width="12"
@@ -135,6 +143,7 @@ Object {
             />
           </svg>
           <input
+            data-testid="searchInput-input"
             disabled=""
             type="text"
             value=""
@@ -146,11 +155,13 @@ Object {
   "container": <div>
     <div
       class="searchInput"
+      data-testid="searchInput"
     >
       <div
         class="searchInput__input"
       >
         <svg
+          data-testid="searchInput-icon"
           height="12"
           viewBox="0 0 24 24"
           width="12"
@@ -163,6 +174,7 @@ Object {
           />
         </svg>
         <input
+          data-testid="searchInput-input"
           disabled=""
           type="text"
           value=""
@@ -231,11 +243,13 @@ Object {
     <div>
       <div
         class="searchInput"
+        data-testid="searchInput"
       >
         <div
           class="searchInput__input"
         >
           <svg
+            data-testid="searchInput-icon"
             fill="none"
             height="12"
             viewBox="0 0 13 13"
@@ -248,12 +262,14 @@ Object {
             />
           </svg>
           <input
+            data-testid="searchInput-input"
             type="text"
             value=""
           />
         </div>
         <p
           class="searchInput__helpText"
+          data-testid="searchInput-helpText"
         >
           helpText
         </p>
@@ -263,11 +279,13 @@ Object {
   "container": <div>
     <div
       class="searchInput"
+      data-testid="searchInput"
     >
       <div
         class="searchInput__input"
       >
         <svg
+          data-testid="searchInput-icon"
           fill="none"
           height="12"
           viewBox="0 0 13 13"
@@ -280,12 +298,14 @@ Object {
           />
         </svg>
         <input
+          data-testid="searchInput-input"
           type="text"
           value=""
         />
       </div>
       <p
         class="searchInput__helpText"
+        data-testid="searchInput-helpText"
       >
         helpText
       </p>
@@ -352,11 +372,13 @@ Object {
     <div>
       <div
         class="searchInput"
+        data-testid="searchInput"
       >
         <div
           class="searchInput__input"
         >
           <svg
+            data-testid="searchInput-icon"
             fill="none"
             height="12"
             viewBox="0 0 13 13"
@@ -369,6 +391,7 @@ Object {
             />
           </svg>
           <input
+            data-testid="searchInput-input"
             placeholder="placeholder"
             type="text"
             value="value"
@@ -380,11 +403,13 @@ Object {
   "container": <div>
     <div
       class="searchInput"
+      data-testid="searchInput"
     >
       <div
         class="searchInput__input"
       >
         <svg
+          data-testid="searchInput-icon"
           fill="none"
           height="12"
           viewBox="0 0 13 13"
@@ -397,6 +422,7 @@ Object {
           />
         </svg>
         <input
+          data-testid="searchInput-input"
           placeholder="placeholder"
           type="text"
           value="value"

@@ -7,9 +7,11 @@ Object {
     <div>
       <div
         class="loader"
+        data-testid="loader"
       >
         <span
           class="loader__spinner"
+          data-testid="loader-spinner"
         />
       </div>
     </div>
@@ -17,9 +19,11 @@ Object {
   "container": <div>
     <div
       class="loader"
+      data-testid="loader"
     >
       <span
         class="loader__spinner"
+        data-testid="loader-spinner"
       />
     </div>
   </div>,

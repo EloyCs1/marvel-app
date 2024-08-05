@@ -4,12 +4,21 @@ import { CharacterComicProps } from "./types";
 import "./styles.scss";
 
 const CharacterComic: React.FC<CharacterComicProps> = ({ comic }) => {
-  const { image, title, onsaleDate } = comic;
+  const { id, image, title, onsaleDate } = comic;
+  const testId = `characterComic-${id}`;
   return (
-    <div className="characterComic">
-      <div className="characterComic__image" style={{ backgroundImage: `url(${image})` }} />
-      <p className="characterComic__title">{title}</p>
-      <p className="characterComic__onsaleDate">{isNaN(onsaleDate) ? EMPTY_VALUE : onsaleDate}</p>
+    <div className="characterComic" data-testid={testId}>
+      <div
+        className="characterComic__image"
+        style={{ backgroundImage: `url(${image})` }}
+        data-testid={`${testId}-image`}
+      />
+      <p className="characterComic__title" data-testid={`${testId}-title`}>
+        {title}
+      </p>
+      <p className="characterComic__onsaleDate" data-testid={`${testId}-onsaleDate`}>
+        {isNaN(onsaleDate) ? EMPTY_VALUE : onsaleDate}
+      </p>
     </div>
   );
 };

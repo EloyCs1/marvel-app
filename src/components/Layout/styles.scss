@@ -5,3 +5,35 @@
     height: calc(100vh - 84px);
   }
 }
+
+.navbar {
+  position: fixed;
+  width: -webkit-fill-available;
+  top: 0;
+  z-index: 1;
+  height: 84px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 52px 0 48px;
+
+  a {
+    height: 52px;
+  }
+
+  &__favorites {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    align-items: center;
+
+    p {
+      color: var(--color-white);
+    }
+  }
+
+  @media (max-width: 575px) {
+    padding: 0 16px 0 16px;
+  }
+}

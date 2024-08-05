@@ -5,7 +5,10 @@ import { AppWrapper } from "src/__test__/test.utils";
 import { SearchInputProps } from "../types";
 import SearchInput from "../SearchInput";
 
-const defaultProps: SearchInputProps = {};
+const defaultProps: SearchInputProps = {
+  value: "",
+  onChange: jest.fn(),
+};
 
 describe("SearchInput", () => {
   test("Default render", () => {

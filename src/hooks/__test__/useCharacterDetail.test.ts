@@ -22,4 +22,15 @@ describe("useCharacterDetail hook", () => {
       expect(comics).toStrictEqual(COMICS);
     });
   });
+
+  test("get Character Detail ERROR", async () => {
+    jest.spyOn(api, "getCharacter").mockReturnValue(Promise.reject());
+    jest.spyOn(api, "getCharacterComics").mockReturnValue(Promise.reject());
+    const { result } = renderHook(() => useCharacterDetail(CHARACTERS[0].id));
+    await waitFor(() => {
+      const { error, errorComics } = result.current;
+      expect(error).toStrictEqual(true);
+      expect(errorComics).toStrictEqual(true);
+    });
+  });
 });

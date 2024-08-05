@@ -10,7 +10,7 @@ const CharacterDetail: React.FC<CharacterDetailProps> = ({ characterId }) => {
   const { detail, loading, comics, loadingComics } = useCharacterDetail(characterId);
 
   return (
-    <div className="characterDetail">
+    <div className="characterDetail" data-testid={"characterDetail"}>
       <CharacterInfo detail={detail} loading={loading} />
       <CharacterComics comics={comics} loading={loadingComics} />
     </div>

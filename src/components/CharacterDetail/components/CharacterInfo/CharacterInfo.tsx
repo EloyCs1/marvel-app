@@ -18,14 +18,14 @@ const CharacterInfo: React.FC<CharacterInfoProps> = ({ detail, loading }) => {
   };
 
   return (
-    <div className="characterDetail__info">
+    <div className="characterDetail__info" data-testid={"characterInfo"}>
       <div className="characterDetail__info-image" style={{ backgroundImage: `url(${image})` }}>
         {loading && <Loader />}
       </div>
       <div className="characterDetail__info-content">
         <div className="characterDetail__info-content-header">
           <p>{name}</p>
-          {!loading && <Icon name={nameIcon} onClick={onClickIcon} />}
+          {!loading && <Icon testId={`characterInfo-icon`} name={nameIcon} onClick={onClickIcon} />}
         </div>
         <p>{description}</p>
       </div>

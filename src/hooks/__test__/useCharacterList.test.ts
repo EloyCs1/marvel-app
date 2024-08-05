@@ -18,4 +18,31 @@ describe("useCharacterList hook", () => {
       expect(onChangeSearchText).toBeDefined();
     });
   });
+
+  test("get Character List ERROR", async () => {
+    jest.spyOn(api, "getCharacters").mockReturnValue(Promise.reject());
+    const { result } = renderHook(() => useCharacterList());
+    await waitFor(() => {
+      const { error } = result.current;
+      expect(error).toStrictEqual(true);
+    });
+  });
+
+  test("onChangeSearchText", async () => {
+    jest
+      .spyOn(api, "getCharacters")
+      .mockReturnValue(Promise.resolve({ json: () => Promise.resolve(CHARACTERS_RESPONSE) } as Response));
+
+    const { result } = renderHook(() => useCharacterList());
+    await waitFor(() => {
+      const { searchText, onChangeSearchText } = result.current;
+      const event = {
+        target: {
+          value: "value",
+        },
+      } as React.ChangeEvent<HTMLInputElement>;
+      onChangeSearchText(event);
+      expect(searchText).toStrictEqual(event.target.value);
+    });
+  });
 });

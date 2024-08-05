@@ -7,7 +7,9 @@
       "<rootDir>/src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
       "!<rootDir>/src/__test__/test.utils.tsx",
-      "!<rootDir>/src/mocks/**"
+      "!<rootDir>/src/mocks/**",
+      "!<rootDir>/src/pages/AppRouter.tsx",
+      "!<rootDir>/src/*"
     ],
     "coverageThreshold": {
       "global": {

@@ -7,14 +7,17 @@ Object {
     <div>
       <div
         class="characterDetail__comics"
+        data-testid="characterComics"
       >
         <p
           class="characterDetail__comics-title"
+          data-testid="characterComics-title"
         >
           Comics
         </p>
         <div
           class="characterDetail__comics-section"
+          data-testid="characterComics-section"
         >
           <div />
           <div />
@@ -27,14 +30,17 @@ Object {
   "container": <div>
     <div
       class="characterDetail__comics"
+      data-testid="characterComics"
     >
       <p
         class="characterDetail__comics-title"
+        data-testid="characterComics-title"
       >
         Comics
       </p>
       <div
         class="characterDetail__comics-section"
+        data-testid="characterComics-section"
       >
         <div />
         <div />
@@ -104,20 +110,25 @@ Object {
     <div>
       <div
         class="characterDetail__comics"
+        data-testid="characterComics"
       >
         <p
           class="characterDetail__comics-title"
+          data-testid="characterComics-title"
         >
           Comics
         </p>
         <div
           class="characterDetail__comics-section"
+          data-testid="characterComics-section"
         >
           <div
             class="loader"
+            data-testid="characterComics-loader"
           >
             <span
               class="loader__spinner"
+              data-testid="characterComics-loader-spinner"
             />
           </div>
         </div>
@@ -127,20 +138,25 @@ Object {
   "container": <div>
     <div
       class="characterDetail__comics"
+      data-testid="characterComics"
     >
       <p
         class="characterDetail__comics-title"
+        data-testid="characterComics-title"
       >
         Comics
       </p>
       <div
         class="characterDetail__comics-section"
+        data-testid="characterComics-section"
       >
         <div
           class="loader"
+          data-testid="characterComics-loader"
         >
           <span
             class="loader__spinner"
+            data-testid="characterComics-loader-spinner"
           />
         </div>
       </div>

@@ -7,6 +7,7 @@ export enum IconName {
 }
 
 export interface IconProps {
+  testId?: string;
   name: IconName;
   width?: number;
   height?: number;

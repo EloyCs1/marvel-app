@@ -7,18 +7,22 @@ Object {
     <div>
       <div
         class="characterComic"
+        data-testid="characterComic-40632"
       >
         <div
           class="characterComic__image"
+          data-testid="characterComic-40632-image"
           style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/2/00/5ba3bfcc55f5a.jpg);"
         />
         <p
           class="characterComic__title"
+          data-testid="characterComic-40632-title"
         >
           Hulk (2008) #53
         </p>
         <p
           class="characterComic__onsaleDate"
+          data-testid="characterComic-40632-onsaleDate"
         >
           2012
         </p>
@@ -28,18 +32,22 @@ Object {
   "container": <div>
     <div
       class="characterComic"
+      data-testid="characterComic-40632"
     >
       <div
         class="characterComic__image"
+        data-testid="characterComic-40632-image"
         style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/2/00/5ba3bfcc55f5a.jpg);"
       />
       <p
         class="characterComic__title"
+        data-testid="characterComic-40632-title"
       >
         Hulk (2008) #53
       </p>
       <p
         class="characterComic__onsaleDate"
+        data-testid="characterComic-40632-onsaleDate"
       >
         2012
       </p>
@@ -106,18 +114,22 @@ Object {
     <div>
       <div
         class="characterComic"
+        data-testid="characterComic-40632"
       >
         <div
           class="characterComic__image"
+          data-testid="characterComic-40632-image"
           style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/2/00/5ba3bfcc55f5a.jpg);"
         />
         <p
           class="characterComic__title"
+          data-testid="characterComic-40632-title"
         >
           Hulk (2008) #53
         </p>
         <p
           class="characterComic__onsaleDate"
+          data-testid="characterComic-40632-onsaleDate"
         >
           -
         </p>
@@ -127,18 +139,22 @@ Object {
   "container": <div>
     <div
       class="characterComic"
+      data-testid="characterComic-40632"
     >
       <div
         class="characterComic__image"
+        data-testid="characterComic-40632-image"
         style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/2/00/5ba3bfcc55f5a.jpg);"
       />
       <p
         class="characterComic__title"
+        data-testid="characterComic-40632-title"
       >
         Hulk (2008) #53
       </p>
       <p
         class="characterComic__onsaleDate"
+        data-testid="characterComic-40632-onsaleDate"
       >
         -
       </p>

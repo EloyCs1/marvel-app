@@ -7,6 +7,7 @@ Object {
     <div>
       <div
         class="characterDetail"
+        data-testid="characterDetail"
       >
         <div />
         <div />
@@ -16,6 +17,7 @@ Object {
   "container": <div>
     <div
       class="characterDetail"
+      data-testid="characterDetail"
     >
       <div />
       <div />

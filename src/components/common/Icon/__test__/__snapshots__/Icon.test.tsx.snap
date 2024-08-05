@@ -6,6 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <svg
+        data-testid="icon"
         fill="none"
         height="21.68"
         viewBox="0 0 24 22"
@@ -23,6 +24,7 @@ Object {
   </body>,
   "container": <div>
     <svg
+      data-testid="icon"
       fill="none"
       height="21.68"
       viewBox="0 0 24 22"
@@ -97,6 +99,7 @@ Object {
   "baseElement": <body>
     <div>
       <svg
+        data-testid="icon"
         fill="none"
         height="21.68"
         viewBox="0 0 15 14"
@@ -112,6 +115,7 @@ Object {
   </body>,
   "container": <div>
     <svg
+      data-testid="icon"
       fill="none"
       height="21.68"
       viewBox="0 0 15 14"
@@ -185,8 +189,10 @@ Object {
     <div>
       <button
         class="buttonIcon"
+        data-testid="icon-button"
       >
         <svg
+          data-testid="icon"
           fill="none"
           height="21.68"
           viewBox="0 0 130 52"
@@ -231,8 +237,10 @@ Object {
   "container": <div>
     <button
       class="buttonIcon"
+      data-testid="icon-button"
     >
       <svg
+        data-testid="icon"
         fill="none"
         height="21.68"
         viewBox="0 0 130 52"
@@ -333,6 +341,7 @@ Object {
   "baseElement": <body>
     <div>
       <svg
+        data-testid="icon"
         fill="none"
         height="21.68"
         viewBox="0 0 13 13"
@@ -348,6 +357,7 @@ Object {
   </body>,
   "container": <div>
     <svg
+      data-testid="icon"
       fill="none"
       height="21.68"
       viewBox="0 0 13 13"
@@ -420,6 +430,7 @@ Object {
   "baseElement": <body>
     <div>
       <svg
+        data-testid="icon"
         height="21.68"
         viewBox="0 0 24 24"
         width="24"
@@ -435,6 +446,7 @@ Object {
   </body>,
   "container": <div>
     <svg
+      data-testid="icon"
       height="21.68"
       viewBox="0 0 24 24"
       width="24"

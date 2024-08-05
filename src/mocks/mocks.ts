@@ -51,7 +51,7 @@ export const COMICS: AppCharacter.Comic[] = [
   {
     id: 47176,
     title: "FREE COMIC BOOK DAY 2013 1 (2013) #1",
-    onsaleDate: 2013,
+    onsaleDate: NaN,
     image: "http://i.annihil.us/u/prod/marvel/i/mg/9/50/57ed5bc9040e3.jpg",
   },
 ];
@@ -902,7 +902,7 @@ export const COMICS_RESPONSE: ApiCharacterComics.Comic = {
         },
         dates: [
           {
-            type: "onsaleDate",
+            type: "",
             date: "2013-03-20T00:00:00-0400",
           },
           {

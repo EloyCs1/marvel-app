@@ -8,12 +8,18 @@ import "./styles.scss";
 
 const CharacterComics: React.FC<CharacterComicsProps> = ({ comics, loading }) => {
   const { formatMessage } = useIntl();
-
+  const testId = `characterComics`;
   return (
-    <div className="characterDetail__comics">
-      <p className="characterDetail__comics-title">{formatMessage({ id: "characterDetail.comics.title" })}</p>
-      <div className="characterDetail__comics-section">
-        {loading ? <Loader /> : comics.map((comic) => <CharacterComic key={comic.id} comic={comic} />)}
+    <div className="characterDetail__comics" data-testid={testId}>
+      <p className="characterDetail__comics-title" data-testid={`${testId}-title`}>
+        {formatMessage({ id: "characterDetail.comics.title" })}
+      </p>
+      <div className="characterDetail__comics-section" data-testid={`${testId}-section`}>
+        {loading ? (
+          <Loader testId={`${testId}-loader`} />
+        ) : (
+          comics.map((comic) => <CharacterComic key={comic.id} comic={comic} />)
+        )}
       </div>
     </div>
   );

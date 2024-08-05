@@ -1,9 +1,10 @@
+import { LoaderProps } from "./types";
 import "./styles.scss";
 
-const Loader = () => {
+const Loader: React.FC<LoaderProps> = ({ testId = "loader" }) => {
   return (
-    <div className="loader">
-      <span className="loader__spinner"></span>
+    <div className="loader" data-testid={testId}>
+      <span className="loader__spinner" data-testid={`${testId}-spinner`}></span>
     </div>
   );
 };
