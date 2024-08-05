@@ -40,7 +40,7 @@ const useCharacterDetail = (characterId: number) => {
         id,
         name,
         description,
-        image: `${path}.${extension}`,
+        image: `${path.replace("http:", "https:")}.${extension}`,
       };
       setDetail(mapCharacter);
     } catch (error) {
@@ -67,7 +67,7 @@ const useCharacterDetail = (characterId: number) => {
           id,
           title,
           onsaleDate: onsaleDate ? new Date(onsaleDate).getFullYear() : NaN,
-          image: `${path}.${extension}`,
+          image: `${path.replace("http:", "https:")}.${extension}`,
         };
       });
 

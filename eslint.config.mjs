@@ -18,4 +18,11 @@ export default [
       "react/prop-types": "off",
     },
   },
+  {
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
+  },
 ];

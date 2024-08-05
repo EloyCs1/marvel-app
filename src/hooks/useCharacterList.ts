@@ -32,7 +32,7 @@ const useCharacterList = () => {
           id,
           name,
           description,
-          image: `${path}.${extension}`,
+          image: `${path.replace("http:", "https:")}.${extension}`,
         }),
       );
       setCharacterList(mapCharacters);
