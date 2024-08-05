@@ -4,7 +4,14 @@ import { AppWrapper } from "src/__test__/test.utils";
 import { CharacterDetailProps } from "../types";
 import CharacterDetail from "../CharacterDetail";
 
-const mockUseCharacterDetail = { detail: CHARACTERS[0], loading: false, comics: COMICS, loadingComics: false };
+const mockUseCharacterDetail = {
+  detail: CHARACTERS[0],
+  loading: false,
+  comics: COMICS,
+  loadingComics: false,
+  error: false,
+  errorComics: false,
+};
 
 jest.mock("src/hooks/useCharacterDetail", () => ({
   __esModule: true,
@@ -27,6 +34,17 @@ const defaultProps: CharacterDetailProps = {
 
 describe("CharacterDetail", () => {
   test("Default render", () => {
+    const wrapper = render(
+      <AppWrapper>
+        <CharacterDetail {...defaultProps} />
+      </AppWrapper>,
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  test("Error render", () => {
+    mockUseCharacterDetail.error = true;
+    mockUseCharacterDetail.errorComics = true;
     const wrapper = render(
       <AppWrapper>
         <CharacterDetail {...defaultProps} />

@@ -15,11 +15,10 @@ const useCharacterDetail = (characterId: number) => {
 
   const isMounted = useRef(true);
 
-  useEffect(() => {
-    return () => {
-      isMounted.current = false;
-    };
-  }, []);
+  const tryAgain = () => {
+    getCharacterDetail();
+    getComics();
+  };
 
   const getCharacterDetail = async () => {
     try {
@@ -86,9 +85,12 @@ const useCharacterDetail = (characterId: number) => {
       getCharacterDetail();
       getComics();
     }
+    return () => {
+      isMounted.current = false;
+    };
   }, []);
 
-  return { loading, error, detail, loadingComics, errorComics, comics };
+  return { loading, error, detail, loadingComics, errorComics, comics, tryAgain };
 };
 
 export default useCharacterDetail;

@@ -12,6 +12,8 @@ const useCharacterList = () => {
   const isMounted = useRef(true);
   const isSearchMounted = useRef(true);
 
+  const tryAgain = () => getCharacterList(searchText);
+
   const onChangeSearchText = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchText(event.target.value);
   };
@@ -61,7 +63,7 @@ const useCharacterList = () => {
     return () => clearTimeout(delayDebounceFn);
   }, [searchText]);
 
-  return { loading, error, characterList, searchText, onChangeSearchText };
+  return { loading, error, characterList, searchText, onChangeSearchText, tryAgain };
 };
 
 export default useCharacterList;

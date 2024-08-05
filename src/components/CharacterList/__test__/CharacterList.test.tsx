@@ -9,6 +9,7 @@ const mockUseCharacterList = {
   characterList: CHARACTERS,
   searchText: "",
   onChangeSearchText: jest.fn(),
+  error: false,
 };
 
 jest.mock("src/hooks/useCharacterList", () => ({
@@ -52,6 +53,16 @@ describe("CharacterList", () => {
     expect(wrapper).toMatchSnapshot();
 
     expect(wrapper.getByTestId(`characterList-favoritesTitle`)).toBeInTheDocument();
+  });
+
+  test("Error render", () => {
+    mockUseCharacterList.error = true;
+    const wrapper = render(
+      <AppWrapper>
+        <CharacterList />
+      </AppWrapper>,
+    );
+    expect(wrapper).toMatchSnapshot();
   });
 
   test("Loading render", () => {

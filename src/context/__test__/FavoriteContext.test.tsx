@@ -14,8 +14,8 @@ const TestingComponent = () => {
   );
 };
 
-describe("<FavoriteProvider />", () => {
-  test("", () => {
+describe("FavoriteProvider context", () => {
+  test("TestingComponent for FavoriteProvider", () => {
     defaultFavoriteContextValue.toggleFavoriteFilter(true);
     defaultFavoriteContextValue.toggleFavoriteId(CHARACTERS[0].id);
 

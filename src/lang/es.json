@@ -7,5 +7,8 @@
   "notFound.subTitle": "Oh no!!",
   "notFound.description": "¡La página que estás buscando parece haber desaparecido! Es posible que la hayan eliminado, modificado o que no esté disponible temporalmente, pero no temas, tenemos a nuestros mejores hombres trabajando en ello. Mientras tanto...",
   "notFound.betterLuck": "También puede que tengas más suerte en alguna de estas páginas:",
-  "notFound.link.home": "Marvel Home"
+  "notFound.link.home": "Marvel Home",
+  "errorComponent.title": "Error",
+  "errorComponent.subTitle": "Upsss, algo salió mal!!!",
+  "errorComponent.tryAgain": "Intentar de nuevo"
 }

@@ -1,26 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CharacterDetail Default render 1`] = `
+exports[`ErrorComponent Default render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="characterDetail"
-        data-testid="characterDetail"
+        class="errorComponent"
+        data-testid="errorComponent"
       >
-        <div />
-        <div />
+        <p
+          class="errorComponent__title"
+        >
+          Error
+        </p>
+        <p
+          class="errorComponent__subTitle"
+        >
+          Upsss, algo salió mal!!!
+        </p>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="characterDetail"
-      data-testid="characterDetail"
+      class="errorComponent"
+      data-testid="errorComponent"
     >
-      <div />
-      <div />
+      <p
+        class="errorComponent__title"
+      >
+        Error
+      </p>
+      <p
+        class="errorComponent__subTitle"
+      >
+        Upsss, algo salió mal!!!
+      </p>
     </div>
   </div>,
   "debug": [Function],
@@ -77,7 +93,7 @@ Object {
 }
 `;
 
-exports[`CharacterDetail Error render 1`] = `
+exports[`ErrorComponent tryAgain render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -96,6 +112,11 @@ Object {
         >
           Upsss, algo salió mal!!!
         </p>
+        <a
+          data-testid="errorComponent-tryAgain"
+        >
+          Intentar de nuevo
+        </a>
       </div>
     </div>
   </body>,
@@ -114,6 +135,11 @@ Object {
       >
         Upsss, algo salió mal!!!
       </p>
+      <a
+        data-testid="errorComponent-tryAgain"
+      >
+        Intentar de nuevo
+      </a>
     </div>
   </div>,
   "debug": [Function],

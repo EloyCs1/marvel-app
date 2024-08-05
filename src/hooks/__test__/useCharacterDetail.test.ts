@@ -28,9 +28,11 @@ describe("useCharacterDetail hook", () => {
     jest.spyOn(api, "getCharacterComics").mockReturnValue(Promise.reject());
     const { result } = renderHook(() => useCharacterDetail(CHARACTERS[0].id));
     await waitFor(() => {
-      const { error, errorComics } = result.current;
+      const { error, errorComics, tryAgain } = result.current;
+      tryAgain();
       expect(error).toStrictEqual(true);
       expect(errorComics).toStrictEqual(true);
     });
+    expect(api.getCharacter).toBeCalledTimes(3);
   });
 });

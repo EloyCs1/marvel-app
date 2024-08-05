@@ -5,13 +5,14 @@ import useCharacterList from "src/hooks/useCharacterList";
 import CharacterCard from "../CharacterCard/CharacterCard";
 import SearchInput from "src/components/common/SearchInput/SearchInput";
 import Loader from "src/components/common/Loader/Loader";
+import ErrorComponent from "../common/ErrorComponent/ErrorComponent";
 
 import "./styles.scss";
 
 const CharacterList = () => {
   const testId = "characterList";
   const { formatMessage } = useIntl();
-  const { loading, characterList, searchText, onChangeSearchText } = useCharacterList();
+  const { loading, error, characterList, searchText, onChangeSearchText, tryAgain } = useCharacterList();
   const { favoriteFilter, favoriteIds } = useFavorites();
 
   const count = favoriteFilter
@@ -40,14 +41,14 @@ const CharacterList = () => {
       />
       {loading ? (
         <Loader testId={`${testId}-loader`} />
+      ) : !error ? (
+        <div className="characterList__cardGrid" data-testid={`${testId}-cardGrid`}>
+          {characterList.map((character) => (
+            <CharacterCard key={character.id} character={character} />
+          ))}
+        </div>
       ) : (
-        <>
-          <div className="characterList__cardGrid" data-testid={`${testId}-cardGrid`}>
-            {characterList.map((character) => (
-              <CharacterCard key={character.id} character={character} />
-            ))}
-          </div>
-        </>
+        <ErrorComponent tryAgain={tryAgain} />
       )}
     </div>
   );

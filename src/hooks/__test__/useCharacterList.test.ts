@@ -4,6 +4,10 @@ import useCharacterList from "../useCharacterList";
 import { CHARACTERS, CHARACTERS_RESPONSE } from "src/mocks/mocks";
 
 describe("useCharacterList hook", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
   test("get Character List", async () => {
     jest
       .spyOn(api, "getCharacters")
@@ -23,9 +27,11 @@ describe("useCharacterList hook", () => {
     jest.spyOn(api, "getCharacters").mockReturnValue(Promise.reject());
     const { result } = renderHook(() => useCharacterList());
     await waitFor(() => {
-      const { error } = result.current;
+      const { error, tryAgain } = result.current;
+      tryAgain();
       expect(error).toStrictEqual(true);
     });
+    expect(api.getCharacters).toBeCalledTimes(3);
   });
 
   test("onChangeSearchText", async () => {
