@@ -1,6 +1,7 @@
 {
   "name": "marvel-app",
   "version": "0.1.0",
+  "homepage": "https://EloyCs1.github.io/marvel-app",
   "private": true,
   "jest": {
     "collectCoverageFrom": [
