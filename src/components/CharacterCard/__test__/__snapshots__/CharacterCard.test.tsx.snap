@@ -13,7 +13,7 @@ Object {
         <div
           class="characterCard__image"
           data-testid="characterCard-image-1017100"
-          style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
+          style="background-image: url(https://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
         />
         <div
           class="characterCard__propeties"
@@ -53,7 +53,7 @@ Object {
       <div
         class="characterCard__image"
         data-testid="characterCard-image-1017100"
-        style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
+        style="background-image: url(https://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
       />
       <div
         class="characterCard__propeties"
@@ -211,7 +211,7 @@ Object {
         <div
           class="characterCard__image"
           data-testid="characterCard-image-1017100"
-          style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
+          style="background-image: url(https://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
         />
         <div
           class="characterCard__propeties"
@@ -253,7 +253,7 @@ Object {
       <div
         class="characterCard__image"
         data-testid="characterCard-image-1017100"
-        style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
+        style="background-image: url(https://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg); background-position: center;"
       />
       <div
         class="characterCard__propeties"

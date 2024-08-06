@@ -6,26 +6,26 @@ export const CHARACTERS: AppCharacter.Character[] = [
     name: "A-Bomb (HAS)",
     description:
       "Rick Jones has been Hulk's best bud since day one, but now he's more than a friend...he's a teammate! Transformed by a Gamma energy explosion, A-Bomb's thick, armored skin is just as strong and powerful as it is blue. And when he curls into action, he uses it like a giant bowling ball of destruction! ",
-    image: "http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg",
+    image: "https://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg",
   },
   {
     id: 1009144,
     name: "A.I.M.",
     description: "AIM is a terrorist organization bent on destroying the world.",
-    image: "http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec.jpg",
+    image: "https://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec.jpg",
   },
   {
     id: 1010699,
     name: "Aaron Stack",
     description: "",
-    image: "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg",
+    image: "https://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg",
   },
   {
     id: 1009146,
     name: "Abomination (Emil Blonsky)",
     description:
       "Formerly known as Emil Blonsky, a spy of Soviet Yugoslavian origin working for the KGB, the Abomination gained his powers after receiving a dose of gamma radiation similar to that which transformed Bruce Banner into the incredible Hulk.",
-    image: "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04.jpg",
+    image: "https://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04.jpg",
   },
 ];
 
@@ -34,25 +34,25 @@ export const COMICS: AppCharacter.Comic[] = [
     id: 40632,
     title: "Hulk (2008) #53",
     onsaleDate: 2012,
-    image: "http://i.annihil.us/u/prod/marvel/i/mg/2/00/5ba3bfcc55f5a.jpg",
+    image: "https://i.annihil.us/u/prod/marvel/i/mg/2/00/5ba3bfcc55f5a.jpg",
   },
   {
     id: 40630,
     title: "Hulk (2008) #54",
     onsaleDate: 2012,
-    image: "http://i.annihil.us/u/prod/marvel/i/mg/f/00/5ba3c7cd5f1e2.jpg",
+    image: "https://i.annihil.us/u/prod/marvel/i/mg/f/00/5ba3c7cd5f1e2.jpg",
   },
   {
     id: 40628,
     title: "Hulk (2008) #55",
     onsaleDate: 2012,
-    image: "http://i.annihil.us/u/prod/marvel/i/mg/6/60/5ba3d0869c543.jpg",
+    image: "https://i.annihil.us/u/prod/marvel/i/mg/6/60/5ba3d0869c543.jpg",
   },
   {
     id: 47176,
     title: "FREE COMIC BOOK DAY 2013 1 (2013) #1",
     onsaleDate: NaN,
-    image: "http://i.annihil.us/u/prod/marvel/i/mg/9/50/57ed5bc9040e3.jpg",
+    image: "https://i.annihil.us/u/prod/marvel/i/mg/9/50/57ed5bc9040e3.jpg",
   },
 ];
 
