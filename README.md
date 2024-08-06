@@ -1,7 +1,11 @@
 # Marvel App
 
-This project is a React SPA using the [Marvel Comics API](https://developer.marvel.com/documentation/getting_started) to get and filter character information.
 The application is deployed on GitHub Pages: [Marvel App](https://eloycs1.github.io/marvel-app/).
+
+This project is a React SPA using the [Marvel Comics API](https://developer.marvel.com/documentation/getting_started) to get and filter character information.
+
+> ⚠️The API has a high response time. This can cause long loading times. To prevent too many requests, the search input has been disabled while loading.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Installation and Usage
@@ -53,6 +57,19 @@ Run the lint to display possible errors. It is recommended to install the `ESLin
 ### `npm run format`
 
 Execute the rules configured in prettier to format all files. It is recommended to install the `Prettier - Code formatter` for Visual Studio Code and enable format on save option to prevent format errors.
+
+## Testing
+
+To ensure the quality and integrity of the code, unit tests have been performed with [Jest](https://jestjs.io/docs/tutorial-react). More than 90% coverage of Statements, Branches, Functions and Lines has been configured
+
+## Stack
+
+- **react**: 18.3.1
+- **react-router-dom**: 6.25.1
+- **sass**: 1.77.8
+- **eslint**: 8.56.0
+- **prettier**: 3.3.3
+- **jest**: 27.5.2
 
 ## Learn More
 
